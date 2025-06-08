@@ -8,7 +8,7 @@ app = Flask(__name__)
 CORS(app)  # 允许跨域请求
 
 # 数据库配置 - 使用SQLite文件数据库
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///instance/todos.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///todos.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 # 初始化SQLAlchemy
